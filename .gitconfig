@@ -1,0 +1,36 @@
+[user]
+	name = Jake Bills
+	email = jakebills1@gmail.com
+[core]
+	editor = vim
+	excludesFile = /Users/jakebills/.gitignore_global
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	co = checkout
+	all = add . 
+	cm = commit -m 
+  pom = push origin master
+  phm = push heroku master
+  pgm = push github master
+  stat = status
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

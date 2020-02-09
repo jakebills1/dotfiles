@@ -104,3 +104,4 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
